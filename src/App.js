@@ -9,7 +9,10 @@ function App() {
         <h3>{people.length} birthdays today</h3>
         <List people={people} />
         <div>
-          <button className="bg-gray-800 text-white w-full py-3 rounded-2xl">
+          <button
+            onClick={() => setPeople([])}
+            className="bg-gray-800 text-white w-full py-3 rounded-2xl"
+          >
             Clear All{' '}
           </button>
         </div>
